@@ -78,61 +78,6 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/12/07/自动截取文章摘要/" title="自动截取文章摘要" itemprop="url">自动截取文章摘要</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="nonozone" target="_blank" itemprop="author">nonozone</a>
-		
-  <p class="article-time">
-    <time datetime="2015-12-07T05:12:24.000Z" itemprop="datePublished"> 發表於 2015-12-07</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>#自动截取文章摘要</p>
-<p>##截取文章字符数作为文章摘要<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">xsl:choose</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">xsl:when</span> <span class="attribute">test</span>=<span class="value">"string-length(content/p) &amp;gt; 300"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">p</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">xsl:value-of</span> <span class="attribute">select</span>=<span class="value">"substring(content/p,1,300)"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">xsl:text</span>&gt;</span>...<span class="tag">&lt;/<span class="title">xsl:text</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">xsl:when</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">xsl:otherwise</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">xsl:copy-of</span> <span class="attribute">select</span>=<span class="value">"content/*"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">xsl:otherwise</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">xsl:choose</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>#直接将文章第一段作为文章摘要<br><figure class="highlight ceylon"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;xsl:<span class="keyword">value</span>-<span class="keyword">of</span> select=<span class="string">"content/p"</span>/&gt;</span><br></pre></td></tr></table></figure></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/12/07/自动截取文章摘要/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/12/07/自动截取文章摘要/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
       <a href="/2015/12/04/hello-world/" title="Hello World" itemprop="url">Hello World</a>
   </h1>
   <p class="article-author">By
